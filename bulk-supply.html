@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Enquire about bulk agricultural produce supply with MAYORIX AGRO.">
+  <title>Bulk Supply | MAYORIX AGRO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="siteHeader"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">For growing businesses</p>
+        <h1>Bulk produce supply, planned around your needs.</h1>
+        <p>
+          Tell us what produce you need, the quantity, your destination
+          and when you need it. We'll need to confirm availability,
+          pricing and logistics before any order is accepted.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container form-layout">
+        <div>
+          <h2>Who is this for?</h2>
+          <ul class="bullet-list">
+            <li>Market traders and retailers</li>
+            <li>Bulk buyers and distributors</li>
+            <li>Restaurants and food businesses</li>
+            <li>Food processors and factories</li>
+          </ul>
+
+          <h3 style="margin-top:28px">How it works</h3>
+          <div class="steps" style="grid-template-columns:1fr">
+            <article class="step-card">
+              <div class="step-number">1</div>
+              <h3>Describe your requirement</h3>
+              <p>Specify the produce, quantity, unit and destination.</p>
+            </article>
+            <article class="step-card">
+              <div class="step-number">2</div>
+              <h3>Review the quotation</h3>
+              <p>Confirm quality, availability, price and transport costs.</p>
+            </article>
+            <article class="step-card">
+              <div class="step-number">3</div>
+              <h3>Agree on the order</h3>
+              <p>Proceed only after the terms and fulfilment arrangements are agreed.</p>
+            </article>
+          </div>
+        </div>
+
+        <form id="contactForm" class="form-card">
+          <h2>Bulk supply enquiry</h2>
+          <p class="form-note">Complete the fields below to prepare your enquiry.</p>
+
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="bulkName">Full name</label>
+              <input id="bulkName" name="name" autocomplete="name" required>
+            </div>
+
+            <div class="form-field">
+              <label for="bulkBusiness">Business name</label>
+              <input id="bulkBusiness" name="businessName" autocomplete="organization">
+            </div>
+
+            <div class="form-field">
+              <label for="bulkEmail">Email address</label>
+              <input id="bulkEmail" name="email" type="email" autocomplete="email" required>
+            </div>
+
+            <div class="form-field">
+              <label for="bulkPhone">Phone number</label>
+              <input id="bulkPhone" name="phone" type="tel" autocomplete="tel" required>
+            </div>
+
+            <div class="form-field">
+              <label for="bulkProduct">Produce required</label>
+              <select id="bulkProduct" name="product" required>
+                <option value="">Choose produce</option>
+                <option>Tomatoes</option>
+                <option>Pepper</option>
+                <option>Okra</option>
+                <option>Garden Eggs</option>
+                <option>Cabbage</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="bulkUnit">Preferred unit</label>
+              <select id="bulkUnit" name="unit" required>
+                <option value="">Choose unit</option>
+                <option>Basket</option>
+                <option>Crate</option>
+                <option>Bag</option>
+                <option>Kilogram</option>
+                <option>Tonnes</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="bulkQuantity">Estimated quantity</label>
+              <input id="bulkQuantity" name="quantity" placeholder="e.g. 50 baskets" required>
+            </div>
+
+            <div class="form-field">
+              <label for="bulkDate">Preferred supply date</label>
+              <input id="bulkDate" name="preferredDate" type="date" required>
+            </div>
+
+            <div class="form-field full">
+              <label for="bulkDestination">Delivery destination</label>
+              <input id="bulkDestination" name="destination" placeholder="Town, city and state" required>
+            </div>
+
+            <div class="form-field full">
+              <label for="bulkDetails">Quality and other requirements</label>
+              <textarea id="bulkDetails" name="message" placeholder="Describe your quality requirements, budget range if available, and other details."></textarea>
+            </div>
+
+            <div class="form-field full">
+              <button class="btn btn-primary" type="submit">Prepare enquiry →</button>
+            </div>
+          </div>
+
+          <p id="formResult" class="form-note" role="status"></p>
+          <p class="form-note">
+            This prototype does not send the form to a server. We will connect
+            a secure enquiry-submission service before the website goes live.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="siteFooter"></div>
+  <script src="script.js"></script>
+</body>
+</html>

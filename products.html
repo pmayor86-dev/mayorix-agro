@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse the MAYORIX AGRO produce catalogue and request current quotations.">
+  <title>Products | MAYORIX AGRO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="siteHeader"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Our catalogue</p>
+        <h1>Explore fresh produce.</h1>
+        <p>Browse our product categories and add items to your enquiry cart. Every item's current availability and price must be confirmed.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="product-toolbar">
+          <div>
+            <h2>Produce catalogue</h2>
+            <p class="form-note">Illustrative catalogue items, not live inventory.</p>
+          </div>
+          <div class="search-box">
+            <input id="productSearch" type="search" placeholder="Search tomatoes, pepper, okra..." aria-label="Search produce">
+          </div>
+        </div>
+
+        <div class="filter-list" aria-label="Product categories">
+          <button class="filter-btn active" type="button" data-product-filter="all">All products</button>
+          <button class="filter-btn" type="button" data-product-filter="vegetables">Vegetables</button>
+          <button class="filter-btn" type="button" data-product-filter="other">Other produce</button>
+        </div>
+
+        <div id="productGrid" class="product-grid"></div>
+
+        <div class="notice" style="margin-top:28px">
+          Prices can change with market conditions, quality, quantity and transport.
+          Request a current quotation before agreeing to buy.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="siteFooter"></div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout | MAYORIX AGRO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="siteHeader"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Your order</p>
+        <h1>Review before you proceed.</h1>
+        <p>Check your selected produce and prepare for the account and payment stages.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container form-layout">
+        <div>
+          <h2>Your order summary</h2>
+          <p>Review the products and quantities you selected.</p>
+
+          <div id="checkoutSummary"></div>
+
+          <p class="form-note">
+            Product prices, availability, delivery charges and final totals
+            must be confirmed before an order is accepted.
+          </p>
+
+          <a href="cart.html" class="btn btn-outline">Return to cart</a>
+        </div>
+
+        <div class="form-card">
+          <h2>Customer account</h2>
+          <p>
+            The intended checkout process will let you sign in or create
+            an account before proceeding to payment.
+          </p>
+
+          <div class="notice">
+            Account registration and secure sign-in have not been connected yet.
+            This is a website prototype, not a live payment system.
+          </div>
+
+          <form id="accountForm" style="margin-top:22px">
+            <div class="form-field">
+              <label for="accountEmail">Email address</label>
+              <input
+                id="accountEmail"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="you@example.com"
+                required>
+            </div>
+
+            <div style="margin-top:18px">
+              <button class="btn btn-primary" type="submit">
+                Continue
+              </button>
+            </div>
+          </form>
+
+          <p id="accountMessage" class="form-note" role="status"></p>
+
+          <p class="form-note">
+            Do not enter a password or payment details until secure
+            account and payment services have been implemented.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="siteFooter"></div>
+  <script src="script.js"></script>
+</body>
+</html>

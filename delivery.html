@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delivery Details | MAYORIX AGRO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="siteHeader"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Order arrangements</p>
+        <h1>How would you like to receive your produce?</h1>
+        <p>Provide your destination and preferred timing so delivery or collection arrangements can be assessed.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container form-layout">
+        <div>
+          <h2>Delivery made clearer</h2>
+          <p>We need the destination, quantity and preferred timing to assess logistics.</p>
+          <ul class="bullet-list">
+            <li>Choose delivery or collection.</li>
+            <li>Provide a destination and preferred date.</li>
+            <li>Confirm transport costs and timing before agreeing.</li>
+            <li>Proceed to checkout to review the account step.</li>
+          </ul>
+          <div class="notice">Submitting this form saves details in this browser only. It does not book a vehicle or confirm delivery.</div>
+        </div>
+
+        <form id="deliveryForm" class="form-card">
+          <h2>Delivery details</h2>
+          <div class="form-grid">
+            <div class="form-field full">
+              <label for="deliveryMethod">Preferred option</label>
+              <select id="deliveryMethod" name="deliveryMethod" required>
+                <option value="">Select an option</option>
+                <option value="delivery">Delivery</option>
+                <option value="collection">Collection</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="customerName">Full name</label>
+              <input id="customerName" name="customerName" autocomplete="name" required>
+            </div>
+
+            <div class="form-field">
+              <label for="customerEmail">Email address</label>
+              <input id="customerEmail" name="customerEmail" type="email" autocomplete="email" required>
+            </div>
+
+            <div class="form-field full">
+              <label for="destination">Destination or preferred collection area</label>
+              <input id="destination" name="destination" placeholder="Town, city, state and useful address details" required>
+            </div>
+
+            <div class="form-field">
+              <label for="preferredDate">Preferred date</label>
+              <input id="preferredDate" name="preferredDate" type="date" required>
+            </div>
+
+            <div class="form-field">
+              <label for="deliveryPhone">Contact number</label>
+              <input id="deliveryPhone" name="deliveryPhone" type="tel" autocomplete="tel" required>
+            </div>
+
+            <div class="form-field full">
+              <label for="deliveryNotes">Additional instructions</label>
+              <textarea id="deliveryNotes" name="deliveryNotes" placeholder="Access instructions, timing preferences or other requirements"></textarea>
+            </div>
+
+            <div class="form-field full">
+              <button class="btn btn-primary" type="submit">Save details and continue →</button>
+            </div>
+          </div>
+          <p class="form-note">These details are not sent to MAYORIX AGRO yet.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="siteFooter"></div>
+  <script src="script.js"></script>
+</body>
+</html>

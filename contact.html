@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact MAYORIX AGRO about agricultural produce, sourcing, bulk supply and delivery enquiries.">
+  <title>Contact & Enquiries | MAYORIX AGRO</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header id="siteHeader"></header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+        <span class="eyebrow">LET'S DISCUSS YOUR REQUIREMENTS</span>
+        <h1>Tell us what you need. We'll review the details.</h1>
+        <p>Use this enquiry form for current-price requests, bulk orders, produce sourcing and delivery discussions. Submitting this prototype form does not yet contact the business.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">A BETTER ENQUIRY STARTS HERE</span>
+          <h2>Give us the details needed to assess your request.</h2>
+          <p>Prices can change with market conditions and product quality. Basket and crate sizes can also vary. Include as much useful information as possible so the quotation can reflect your actual requirements.</p>
+          <ul class="check-list">
+            <li>Product and quantity</li>
+            <li>Basket, crate or suitable unit</li>
+            <li>Preferred quality and condition</li>
+            <li>Delivery destination or collection preference</li>
+            <li>Required date and any special instructions</li>
+          </ul>
+          <div class="card" style="margin-top:25px">
+            <h3>Our communication approach</h3>
+            <p>This prototype does not advertise an unverified phone number, email address or physical office. Official contact details can be added once you confirm which business channels are ready to use.</p>
+          </div>
+        </div>
+
+        <form class="form-card" data-enquiry-form>
+          <h2>Send an enquiry</h2>
+          <p class="muted">Complete the details below. Required fields are marked *.</p>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">Full name *</label>
+              <input class="control" id="name" name="Full name" required maxlength="100" autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="email">Email address *</label>
+              <input class="control" id="email" name="Email" type="email" required maxlength="150" autocomplete="email">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="business">Business name</label>
+            <input class="control" id="business" name="Business name" maxlength="120">
+          </div>
+
+          <div class="field">
+            <label for="location">Destination / location *</label>
+            <input class="control" id="location" name="Destination" required maxlength="180" placeholder="Town or city, state">
+          </div>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="type">Enquiry type *</label>
+              <select class="control" id="type" name="Enquiry type" required>
+                <option value="">Choose an option</option>
+                <option>Current product price</option>
+                <option>Bulk supply</option>
+                <option>Source produce</option>
+                <option>Delivery or collection</option>
+                <option>General enquiry</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="product">Produce *</label>
+              <select class="control" id="product" name="Produce" required>
+                <option value="">Choose produce</option>
+                <option>Tomatoes</option>
+                <option>Pepper</option>
+                <option>Okra</option>
+                <option>Garden eggs</option>
+                <option>Cabbage</option>
+                <option>Other produce / source for me</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="unit">Selling unit *</label>
+              <select class="control" id="unit" name="Selling unit" required>
+                <option value="">Choose a unit</option>
+                <option>Basket</option>
+                <option>Crate</option>
+                <option>Discuss suitable unit</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="quantity">Quantity *</label>
+              <input class="control" id="quantity" name="Quantity" required maxlength="80" placeholder="e.g. 10 baskets">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="quality">Preferred quality / condition *</label>
+            <select class="control" id="quality" name="Quality preference" required>
+              <option value="">Choose preference</option>
+              <option>Fresh and firm</option>
+              <option>Fully ripe</option>
+              <option>Mixed ripeness acceptable</option>
+              <option>Budget-conscious options</option>
+              <option>Discuss suitable condition</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="fulfilment">Delivery or collection *</label>
+            <select class="control" id="fulfilment" name="Fulfilment preference" required>
+              <option value="">Choose an option</option>
+              <option>Delivery — quote transport separately</option>
+              <option>Collection</option>
+              <option>Discuss available options</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="date">Required date</label>
+            <input class="control" id="date" name="Required date" type="date">
+          </div>
+
+          <div class="field">
+            <label for="details">Additional details</label>
+            <textarea class="control" id="details" name="Additional details" rows="4" maxlength="1000" placeholder="Intended use, quality requirements, preferred sourcing location or other information"></textarea>
+          </div>
+
+          <button class="button button-primary" type="submit">Prepare enquiry summary ↗</button>
+          <p class="form-note">Demonstration only: no data is transmitted to MAYORIX AGRO or saved to a database.</p>
+          <div class="form-result" hidden role="status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer id="siteFooter"></footer>
+</body>
+</html>
